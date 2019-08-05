@@ -13,6 +13,98 @@
 </head>
 
 <body>
-  
+  <h1 id="title">Your feedback</h1>
+<main>
+  <p id="description">Please help us improve by leaving your feedback</p>
+  <form id="survey-form">
+    <fieldset>
+      <legend>Contact Details</legend>
+      <label id="name-label">Name:
+        <input type="text" id="name" required placeholder="John Doe" />
+      </label>
+      <label id="email-label">Your email:
+        <input id="email" type="email" required placeholder="john.doe@test.com"/>
+      </label>
+      <label id="number-label">Your age:
+        <input type="number" id="number" required placeholder="18" min="13" max="150"/>
+      </label>
+    </fieldset>
+    <fieldset>
+      <legend>Technical Questions</legend>
+      <label for id="dropdown">Select approriate level of technical expertise</label>
+          <select id="dropdown">
+            <option value="Newbie">Newbie</option>
+            <option value="Some Expertise">Some Expertise</option>
+            <option value="Experienced">Experienced</option>
+            <option value="Senior">Senior</option>
+            <option value="Expert">Expert</option>
+            <option value="Guru">Guru</option>
+          </select>
+      
+    <fieldset id="platform">
+      <legend>What platform do you mainly use for coding?</legend>
+        <label> 
+        <input type="radio"
+               name="platform"
+               id="Mac"
+               value="Mac" />
+               Mac
+        </label>
+        <label>
+        <input type="radio"
+               name="platform"
+               id="Windows"
+               value="Windows" />
+               Windows
+        </label>
+        <label>
+        <input type="radio"
+               name="platform"
+               id="Linux"
+               value="Linux" />
+               Linux
+        </label>
+        <label>
+        <input type="radio"
+               name="platform"
+               id="Other"
+               value="Other" />
+               Other
+        </label>
+        </fieldset>
+        <fieldset id="languages">
+          <legend>What languages and technologies are you familiar with?</legend>
+            <label>
+              <input type="checkbox" value="ES6" class="styled-checkbox"/>
+            ES6
+            </label>
+            <label>
+              <input type="checkbox" value="SQL" class="styled-checkbox"/>
+              SQL
+            </label>
+            <label>
+              <input type="checkbox" value="CSS3" class="styled-checkbox"/>
+              CSS3
+            </label>
+            <label>
+                <input type="checkbox" value="HTML5" class="styled-checkbox"/>
+                HTML5
+            </label>
+            <label>
+                <input type="checkbox" value="Typescript" class="styled-checkbox"/>
+                Typescript
+            </label>
+        </fieldset>
+    </fieldset>
+    <label>Additional Comments
+    <textarea id="othercomments">
+
+    </textarea>
+    </label>
+    <button type="submit" id="submit">Submit</button>
+  </form>
+</main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 </body>
 </html>
